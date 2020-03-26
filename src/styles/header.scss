@@ -1,0 +1,77 @@
+@import 'master';
+
+.header{
+    .outer-container {
+        width: 100%;
+        background-color: $var-black;
+    }
+    .container {
+    padding: 1.5em 1.0875rem 1.45rem;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        h1 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0 0.7em;
+
+            transform-origin: bottom;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+            
+            animation-timing-function: ease;
+
+            &:hover {
+            animation-name: bounce-4;
+            -moz-animation-name: bounce-4;
+            .link-title {
+                color: $var-pink;
+            }
+            }
+        }
+
+        Link {
+            display: flex;
+            flex-direction:column; 
+            align-items: center;
+            align-content: center;           
+        }
+
+        .link-title {
+            color: $var-black;
+            margin-bottom: -1em;
+            text-align: center;
+            font-size: medium;
+            cursor: pointer;
+
+        }
+    }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@keyframes bounce-4 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-10px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}

@@ -1,0 +1,54 @@
+
+  @import 'master';
+
+  .resume-page-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-top: 1em
+    }
+
+  }
+  .display-picture {
+    border-radius: 250px;
+    height: 500px;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // color: red;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .resume.container{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    width:100%;
+    
+
+    .timeline_item{
+      padding: 1em;
+      background-color: $var-black;
+      
+      display: flex;
+      flex-direction: row;
+
+      .timeline-details {
+        display: flex;
+        flex-direction: column;
+        padding: 1em
+      }
+    }
+
+    h2 {
+      margin: 0 1em;
+      align-self: center
+    }
+  }

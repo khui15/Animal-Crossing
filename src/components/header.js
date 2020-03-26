@@ -2,31 +2,51 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import { FaCode, FaSave, FaSeedling, FaMugHot } from 'react-icons/fa';
+
+
+import '../styles/header.scss'
+
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className="header"
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+    <div className="outer-container">
+    <div className="container">
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
         >
           {siteTitle}
         </Link>
       </h1>
+      <div className = "section">
+        <h1 className="resume-link">
+          <Link to="/resume/" ><FaSave/></Link>
+          <div className="link-title">
+            Resume
+          </div>
+        </h1>
+        <h1>
+        <Link to="/resume/"><FaSeedling/></Link>
+        <div className="link-title">
+            Volunteering
+          </div>
+        </h1>
+        <h1>
+        <Link to="/resume/"><FaCode/></Link>
+        <div className="link-title">
+            Projects
+          </div>
+        </h1>
+        <h1>
+        <Link to="/resume/"><FaMugHot/></Link>
+        <div className="link-title">
+            Blog
+          </div>
+        </h1>
+      </div>
+    </div>
     </div>
   </header>
 )
