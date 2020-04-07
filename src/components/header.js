@@ -28,13 +28,13 @@ const Header = ({ siteTitle }) => (
           </div>
         </h1>
         <h1>
-        <Link to="/resume/"><FaSeedling/></Link>
+        <Link to="/volunteering/"><FaSeedling/></Link>
         <div className="link-title">
             Volunteering
           </div>
         </h1>
         <h1>
-        <Link to="/resume/"><FaCode/></Link>
+        <Link to="/projects/"><FaCode/></Link>
         <div className="link-title">
             Projects
           </div>
