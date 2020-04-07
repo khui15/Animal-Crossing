@@ -1,11 +1,8 @@
 import React, {Component} from "react"
 import { Link } from "gatsby"
-import { FaGithub, FaBitbucket, FaAt, FaLinkedin } from 'react-icons/fa';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import dp from "../images/profile_picture.jpg"
 
 import "../styles/projects.scss"
 import "../components/functions"
