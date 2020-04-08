@@ -1,14 +1,31 @@
-@import 'master';
- h1 {
+ h1, .project-page-container {
      margin-top: 1em;
+     
  }
 .projects-container {
     h1 {
         color: $var-pink;
+        margin-bottom: 0 !important;
     }
 
     h2 {
         color: $var-yellow;
+    }
+}
+
+.subtitle {
+    margin-top:0;
+    font-style:italic;
+}
+
+.animal-crossing-hero {
+    width: 100%;
+    content:url(../images/projects/AC/hero.jpg);
+    margin-bottom: 1em;
+
+    @include for-size(tablet){
+        width: unset;
+        height: 400px
     }
 }
 

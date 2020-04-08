@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "../styles/resume.scss"
+// import "../styles/resume.scss"
 
 
 const VolunteeringPage = () => (
@@ -57,7 +57,6 @@ const VolunteeringPage = () => (
       </div>
     </div>
     </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

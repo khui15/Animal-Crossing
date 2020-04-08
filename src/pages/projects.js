@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "../styles/projects.scss"
+// import "../styles/projects.scss"
 import "../components/functions"
 
 
@@ -40,48 +40,61 @@ export default class PojectsPage extends Component {
     return(
   <Layout>
     <SEO title="Projects" />
-    <h1>Programming Magic</h1>   
-    <div className="projects-container" alt="">
+    <div className="project-page-container">
+      <h1>Programming Magic</h1>   
+      <div className="projects-container" alt="">
       <div>
-        <h1>
-          Thesis Project
-        </h1>
-        
-        <h2>
-          Incorporating Audio Feedback into a Fall Detector
-        </h2>
-      </div>
+          <h1>
+            <a href="https://animal-crossing-catches.eunike.dev">Animal Crossing Project</a>
+          </h1>
+          <div className="subtitle">ReactJS, SCSS</div>
+          <div className="animal-crossing-hero">
 
-      <div>
-        <h1>
-          Clinical Information Systems Project
-        </h1>
-        <h2>
-          Physiology Database
-        </h2>
-      </div>
+          </div>
+          <h2>
+            Displaying available resources
+          </h2>
+        </div>
 
-      <div>
-        <h1>
-          Personal Project
-        </h1>
-        <h2>
-          First ReactJS Website
-        </h2>
-      </div>
+        <div>
+          <h1>
+            Thesis Project
+          </h1>
+          <h2>
+            Incorporating Audio Feedback into a Fall Detector
+          </h2>
+        </div>
 
-      <div>
-        <h1>
-          Management Major Project
-        </h1>
-        <div className={'project-spotter-carousel-' + this.state.spotter} onClick={this.updateProjectSpotter}></div>
-        <h2>
-          Gym Buddy Matching Application
-        </h2>
-      </div>
+        <div>
+          <h1>
+            Clinical Information Systems Project
+          </h1>
+          <h2>
+            Physiology Database
+          </h2>
+        </div>
 
+        <div>
+          <h1>
+            Personal Project
+          </h1>
+          <h2>
+            First ReactJS Website
+          </h2>
+        </div>
+
+        <div>
+          <h1>
+            Management Major Project
+          </h1>
+          <div className={'project-spotter-carousel-' + this.state.spotter} onClick={this.updateProjectSpotter}></div>
+          <h2>
+            Gym Buddy Matching Application
+          </h2>
+        </div>
+
+      </div>
     </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 // )
     );

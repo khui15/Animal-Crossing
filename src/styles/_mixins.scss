@@ -1,0 +1,61 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+
+@mixin delay-value($value) {
+	-webkit-transition-delay: $value*0.2s;
+	-moz-transition-delay: $value*0.2s;
+	transition-delay: $value*0.2s !important;
+}
+
+@mixin for-size($size) {
+  @if $size == sm-mobile {
+    @media (min-width: 250px) { @content; }
+  } @else if $size == mobile {
+    @media (min-width: 576px) { @content; }
+  } @else if $size == tablet{
+    @media (min-width: 768px) { @content; }
+  } @else if $size == laptop {
+    @media (min-width: 992px) { @content; }
+  } @else if $size == small-desktop {
+    @media (min-width: 1066px) { @content; }
+  } @else if $size == desktop {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop {
+    @media (min-width: 1440px) { @content; }
+  }
+}
+//cross-browser prefix
+@mixin prefix($property, $val){
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+}

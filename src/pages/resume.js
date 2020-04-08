@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 import dp from "../images/profile_picture.jpg"
 
-import "../styles/resume.scss"
+// import "../styles/resume.scss"
 
 
 const SecondPage = () => (
@@ -87,7 +87,6 @@ const SecondPage = () => (
       </div>
     </div>
     </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

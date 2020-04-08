@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { FiHeart } from "react-icons/fi"
 
 import Header from "./header"
 import "./layout.css"
@@ -35,8 +36,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          Behind every successful woman is a substantial amount of boba.
+        <footer className="footer">
+          Behind every successful woman is a substantial amount of boba <FiHeart />
         </footer>
       </div>
     </>
