@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-blog-post-js","path":"/blog/my-cafe-job/","result":{"data":{"markdownRemark":{"html":"<p>Coming soon!</p>","frontmatter":{"date":"28 May, 2015","title":"My Cafe Job"}}},"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"/my-cafe-job/"}}}
+{"componentChunkName":"component---src-templates-blog-post-js","path":"/blog/my-cafe-job/","result":{"data":{"markdownRemark":{"html":"<p>Coming soon!</p>","frontmatter":{"date":"28 May, 2015","title":"My Cafe Job","featuredImage":null}}},"pageContext":{"slug":"/my-cafe-job/"}}}
