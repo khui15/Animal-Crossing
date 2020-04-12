@@ -1,5 +1,7 @@
 import React, {Component} from "react"
 import { Link, graphql } from "gatsby"
+import { IoIosStarOutline } from "react-icons/io" 
+import Img from 'gatsby-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,27 +17,23 @@ export default ({ data }) => {
     return(
   <Layout>
     <SEO title="Blog" />
-    <div className="project-page-container">
-        <h1>Exerpts from my Adventures</h1>
+    <div className="page-container">
+        <h1 className="page-title">Exerpts from my Adventures <IoIosStarOutline/></h1>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
+          <div key={node.id} className="item-section">
             <Link
               to= {"/blog"+node.fields.slug}
             >
-              <h3
-              >
-                {node.frontmatter.title}{" "}
-                <span
-                >
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
+              <div className="item">
+              <h1>{node.frontmatter.title}</h1>
+              <h2>{node.frontmatter.date}</h2>
+              {node.frontmatter.featuredImage === null ? " ": <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />}
               <p>{node.excerpt}</p>
+              </div>
             </Link>
           </div>
         ))}
       </div>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 // )
     );
@@ -52,6 +50,13 @@ query {
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
           fields {
             slug

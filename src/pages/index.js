@@ -10,7 +10,7 @@ import "../styles/styles.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="home-page-container">
+    <div className="page-container">
       <h1>Hello it's me.</h1>
       <p>Hello and welcome to my playground! Only a handful of people 
         know if its existence, so you're either very special to me, 
