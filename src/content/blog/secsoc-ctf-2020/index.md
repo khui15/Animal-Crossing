@@ -7,7 +7,7 @@ featuredImage: "./team.png"
 
 # Team A BANANA!
 
-My friend and I decided to participate in a CTF held by CSESoc and SecSoc. Despite only being a team of two, and starting one and a half later than the top 10 teams, we managed to secure first place! It was a great experience as, unlike the previous CTF I participated in, I now had a basic understanding of the different kinds of exploits. Roproproproprop.
+My friend (z5206677) and I (yeet) decided to participate in a CTF held by CSESoc and SecSoc. Despite only being a team of two, and starting one and a half later than the top 10 teams, we managed to secure first place! It was a great experience as, unlike the previous CTF I participated in, I now had a basic understanding of the different kinds of exploits. Roproproproprop.
 
 ![trend](https://featherbear.cc/blog/post/csesoc-secsoc-ctf-2020/scoreboard.png)
 
