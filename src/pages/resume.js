@@ -6,9 +6,7 @@ import { IoIosStarOutline } from "react-icons/io"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import dp from "../images/profile_picture.jpg"
-
-// import "../styles/resume.scss"
+import dp from "../images/profile-picture.jpg"
 
 export default class ResumePage extends Component {
   constructor(props){
@@ -34,7 +32,6 @@ export default class ResumePage extends Component {
         <h1>Eunike on Paper <IoIosStarOutline /></h1>   
         <div className="contact-container">
           <img src={dp} className="display-picture"/>
-          {/* <h2>Find Me</h2> */}
           <div className="contact-details">
             <h1>
               <a href="mailto:eunikeutojo98@gmail.com"><FaAt /></a>

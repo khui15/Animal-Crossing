@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Smol Girl, Big World`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Computer engineering student ready to tackle the world of frontend, backend and everything inbetween.`,
+    author: `Eunike Utojo`,
   },
   plugins: [
     `gatsby-plugin-sass`,

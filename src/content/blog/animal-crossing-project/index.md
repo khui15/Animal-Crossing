@@ -2,7 +2,6 @@
 title: Animal Crossing Project
 date: "2019-04-09T22:40:32.169Z"
 featuredImage: "./hero.jpg"
-
 ---
 
 ## The Motivation
