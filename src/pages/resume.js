@@ -57,7 +57,8 @@ export default class ResumePage extends Component {
             <h3>Feb 16 - Dec 20</h3>
             Weighted Average Mark: 75.03<br/> 
             Academic transcript available upon request.<br/>
-            <a href="https://drive.google.com/open?id=1MVaZEWEKVZN6KQ4uJFNQ7UFVrqUeJHwh">View resume</a>
+            <br/>
+            <a className='resume-button' href="https://drive.google.com/open?id=1MVaZEWEKVZN6KQ4uJFNQ7UFVrqUeJHwh">View resume</a>
             </div>
         </div>
 
