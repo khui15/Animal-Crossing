@@ -2,8 +2,6 @@
 title: BIOM9450 - SQL
 date: "2020-09-11T22:40:32.169Z"
 ---
-# SQL
----
 1. Query crash course
 2. Joins
 3. Subqueries
