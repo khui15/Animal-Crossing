@@ -6,6 +6,7 @@ date: "2020-09-11T22:40:32.169Z"
 2. Joins
 3. Subqueries
 4. Useful links
+
 ---
 # Query crash course
 
